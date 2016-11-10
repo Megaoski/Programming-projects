@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\oscarll3\documents\visual studio 2015\projects\project2\project2\header.h(34): error C2664: 'Pokemon::Pokemon(const Pokemon &)': cannot convert argument 1 from 'char *' to 'const Pokemon &'
+  c:\users\oscarll3\documents\visual studio 2015\projects\project2\project2\header.h(34): note: Reason: cannot convert from 'char *' to 'const Pokemon'
+  c:\users\oscarll3\documents\visual studio 2015\projects\project2\project2\header.h(34): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\oscarll3\documents\visual studio 2015\projects\project2\project2\header.h(34): error C2437: 'Pokemon': has already been initialized
