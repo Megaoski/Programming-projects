@@ -1,6 +1,7 @@
 #pragma once
 #ifndef HEADER_H
 #define HEADER_H
+
 #include<iostream>
 using namespace std;
 
@@ -10,25 +11,73 @@ class Stack {
 
 public:
 
-	Stack(int maxElements, int idTopElement, T* stackElements) : maxElements(maxElements) {
+	Stack<T>(int maxElements) : maxElements(maxElements) {
 
 		this->idTopElement = -1;
-		this->stackElements = new stackElements[maxElements];
+
+		if (maxElements > 0) {
+			this->stackElements = new T[maxElements];
+		}
+		else // asi si lo que introduce el usuario es mas pequeño que cero no hace falta alocatar memoria, lo inc¡icializamos a 0.
+			this->stackElements = NULL;
 	}
 
-	~Stack(){}
+	~Stack() { delete[] stackElements ;}
 
 	void push(const T& item) {
 
-	}
-	void pop();
-	T top() const;
+		if (idTopElement < maxElements) {
 
-	bool empty() const;
-	int size() const;
+			idTopElement += 1;
+            stackElements[idTopElement] = item;
+		}
+
+	}
+
+	void pop() {
+
+		if (idTopElement >= 0) {
+			idTopElement -= 1;
+		}
+		
+		
+		
+	}
+
+	T top() const {
+
+		if (idTopElement >= 0) {
+
+			return stackElements[idTopElement];
+		}
+		else {
+			return 0;
+		}
+	}
+
+	bool empty() const {
+
+		if (maxElements == -1) {
+			 
+			return true;
+		}
+		else {
+
+			return false;
+		}
+	}
+
+	int size() const {
+
+		return idTopElement + 1;
+	}
 
 	void print() const {
-		cout << stackElements << maxElements << idTopElement << endl;
+
+		for (int i = 0; i <= maxElements; i++) {
+
+			cout << stackElements[i] << endl;
+		}
 	}
 
 private:
