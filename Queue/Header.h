@@ -17,7 +17,7 @@ public:
 	}
 	~Queue() { delete[] queueElems; }
 
-	void enqueue(const T& item) {
+	void enqueue(const T& item) { //FALTA RESOLVER
 		
 		idEndElem += 1;
 		queueElems[idEndElem] = item;
@@ -26,21 +26,24 @@ public:
 
 	T dequeue() {
 
-		if (idEndElem >= 0) {
 
-			idEndElem -= 1;
+		if(queueElems == 0 || idEndElem == -1){
 
-			if (idEndElem >= 0) {
+			cout << "Queue is empty" << endl;
+		
+		}
+		else {
 
-				return queueElems[idEndElem];
+			int returno = queueElems[0];
+			for (int i = 0; i <= idEndElem; i++) {
+
+				queueElems[i] = queueElems[i + 1];
 			}
-			else {
-				return 0;
-			}
+			idEndElem--;
+			return returno;
 		}
 
 		
-
 	}
 
 	bool empty() const {
@@ -70,6 +73,7 @@ public:
 		}
 
 	}
+
 private:
 	T* queueElems;
 	int maxElems;
