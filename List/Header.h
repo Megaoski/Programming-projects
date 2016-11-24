@@ -18,7 +18,7 @@ public:
 	~List(){}
 
 
-	void pushBack(const T& elem){
+	void pushBack(const T& elem){ 
 
 		node* aux = new node;
 		aux->value = elem;
@@ -64,7 +64,7 @@ public:
 
 	void popBack() {
 
-		asser(first != NULL);
+		assert(first != NULL);
 
 		if (first->next == NULL) {
 
