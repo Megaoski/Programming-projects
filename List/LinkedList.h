@@ -41,7 +41,7 @@ public:
 		else { 
 			
 
-			node* iterator = first; //este iterator nos permite recorrer la lista hasta llegar al final
+			node* iterator = first; //este iterator nos permite recorrer la lista hasta llegar al final, esta apuntando al principio de la list
 			while (iterator->next != NULL) { //recorre la lista
 				iterator = iterator->next;
 			}

@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\oscarll3\desktop\data_structures_double_linked_list\doublelinkedlist.h(350): error C2296: '&&': illegal, left operand has type 'void'
+  c:\users\oscarll3\desktop\data_structures_double_linked_list\doublelinkedlist.h(342): note: while compiling class template member function 'void List<int>::swap(unsigned int,unsigned int)'
+  c:\users\oscarll3\desktop\data_structures_double_linked_list\main.cpp(16): note: see reference to function template instantiation 'void List<int>::swap(unsigned int,unsigned int)' being compiled
+  c:\users\oscarll3\desktop\data_structures_double_linked_list\main.cpp(5): note: see reference to class template instantiation 'List<int>' being compiled
+c:\users\oscarll3\desktop\data_structures_double_linked_list\doublelinkedlist.h(350): error C2297: '&&': illegal, right operand has type 'void'
