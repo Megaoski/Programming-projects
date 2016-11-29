@@ -39,9 +39,7 @@ public:
 		}
 		
 		else { 
-			node* aux = new node;
-			aux->value = elem;
-			aux->next = NULL; // como sera el del final apuntara a NULL
+			
 
 			node* iterator = first; //este iterator nos permite recorrer la lista hasta llegar al final
 			while (iterator->next != NULL) { //recorre la lista

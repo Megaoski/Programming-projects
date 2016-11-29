@@ -1,11 +1,13 @@
 #include<iostream>
-#include"LinkedList.h"
+//#include"LinkedList.h"
+#include"DoubleLinkedList.h"
+
 
 using namespace std;
 
 int main() {
 
-	List<int> exampleList;
+	/*List<int> exampleList;
 	exampleList.pushFront(2);
 	exampleList.pushBack(3);
 	exampleList.pushFront(1);
@@ -16,6 +18,14 @@ int main() {
 	exampleList.printNodes();
 	exampleList.remove(3); 
 	exampleList.printNodes();
+	*/
+
+	DoubleList<int> example;
+	example.pushFront(3);
+	example.pushFront(5);
+	example.printNodes();
+
+
 
 
 	system("pause");
