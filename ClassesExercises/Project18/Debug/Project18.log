@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\usuario\documents\visual studio 2015\projects\project18\project18\source.cpp(9): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Project18.vcxproj -> c:\users\usuario\documents\visual studio 2015\Projects\Project18\Debug\Project18.exe
+  Project18.vcxproj -> c:\users\usuario\documents\visual studio 2015\Projects\Project18\Debug\Project18.pdb (Partial PDB)
