@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<time.h>
 
 using namespace std;
 
@@ -22,8 +23,38 @@ void Problem3(int* array, int sizeArray)
 	}
 }
 
+void Problem4(int* Arr1, int sizeArr1, int* Arr2, int sizeArr2)
+{
+
+	
+
+	for (int i = 0; i <= sizeArr1 - 1; i++)
+	{
+		Arr1[i] = abs(Arr2[i]);
+		
+	}
+
+	for (int i = 0; i <= sizeArr2 - 1; i++)
+	{
+		
+		Arr2[i] = abs(Arr1[i]);
+	}
+
+
+	for (int i = 0; i <= sizeArr1 - 1; i++)
+	{
+		cout << Arr1[i] << " " << endl;
+	}
+	for (int i = 0; i <= sizeArr2 - 1; i++)
+	{
+		cout << Arr2[i] << " " << endl;
+	}
+
+}
+
 int main()
 {
+	srand(time(NULL));
 
 	int first;
 	int secondo;
@@ -47,10 +78,24 @@ int main()
 	 }
 
 	
-	Problem3(arrayProblemo3, tamaño);
+	//Problem3(arrayProblemo3, tamaño);
 
 
+	int* vec1 = (int*)calloc(20, sizeof(int));
+	int sizeArray1 = 20;
+	int* vec2 = (int*)malloc(20 * sizeof(int));
+	int sizeArray2 = 20;
 
+	for (int i = 0; i < 20; i++)
+	{
+		vec2[i] = rand() % 1001; //incializamos segundo arraycon random numbers del 0 al 1000
+	}
+
+	Problem4(vec1, sizeArray1, vec2, sizeArray2);
+	
+
+	free(vec1);
+	free(vec2);
 	system("pause");
 	return 0;
 }

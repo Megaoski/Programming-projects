@@ -1,3 +1,4 @@
 ﻿  Source.cpp
-  Project17.vcxproj -> c:\users\usuario\documents\visual studio 2015\Projects\Project17\Debug\Project17.exe
-  Project17.vcxproj -> c:\users\usuario\documents\visual studio 2015\Projects\Project17\Debug\Project17.pdb (Partial PDB)
+c:\users\usuario\documents\github\programming-projects\pointerexercises\project17\source.cpp(57): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Project17.vcxproj -> C:\Users\Usuario\Documents\GitHub\Programming-projects\PointerExercises\Debug\Project17.exe
+  Project17.vcxproj -> C:\Users\Usuario\Documents\GitHub\Programming-projects\PointerExercises\Debug\Project17.pdb (Partial PDB)
