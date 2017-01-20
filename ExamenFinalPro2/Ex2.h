@@ -50,7 +50,38 @@ private:
 class TieFighter : public Spaceship
 {
 public:
+
+	TieFighter(int energy, int ammo, int sped, int powerFromGenerators) : Spaceship(energy, ammo, speed), powerFromGenerators(powerFromGenerators) {};
+
+	int getPowerUnits() const
+	{
+		return powerFromGenerators;
+	}
+
+	void divertPowerToEnergy()
+	{
+		energy += powerFromGenerators;
+		powerFromGenerators = 0;
+
+	}
+
+	void divertPowerToAmmo()
+	{
+		ammo += powerFromGenerators;
+		powerFromGenerators = 0;
+
+	}
+
+	void divertPowerToSpeed()
+	{
+		speed += powerFromGenerators;
+		powerFromGenerators = 0;
+
+	}
+
 private:
+	
+	int powerFromGenerators;
 };
 
 
