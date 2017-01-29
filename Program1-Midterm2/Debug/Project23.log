@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\usuario\documents\visual studio 2015\projects\project23\project23\header.h(33): warning C4715: 'compareTiles': not all control paths return a value
+  Project23.vcxproj -> c:\users\usuario\documents\visual studio 2015\Projects\Project23\Debug\Project23.exe
+  Project23.vcxproj -> c:\users\usuario\documents\visual studio 2015\Projects\Project23\Debug\Project23.pdb (Partial PDB)
